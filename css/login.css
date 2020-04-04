@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(115, 170, 187);
+    padding: 4rem;
+    font-family: tahoma;
+}
+
+.main {
+    width: 100%;
+    background-color: ivory;
+    box-shadow: 0 0 20px #357f96;
+min-width: 540px;
+}
+
+.top {
+    background-color: rgb(156, 195, 206);
+}
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 20px;
+    width: 200px;
+}
+
+
+
+
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 70px 0 25px;
+
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 140px;
+}
+
+.signup {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: -71px;
+    padding: 30px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+.signup h4 {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.signup .field {
+    margin-top: 30px;
+    position: relative;
+}
+
+.signup input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    color: gray;
+    font-size: 1rem;
+}
+
+.field a {
+    display: block;
+    width: 100%;
+
+}
+
+.field button {
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: rgb(141, 208, 235);
+    border: 1px solid rgb(94, 76, 76);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.signup .label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transition: 0.2s ease all;
+    color: wheat;
+}
+
+.signup .label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transition: 0.2s ease all;
+    color: #757575;
+}
+
+.signup input:focus~.label,
+.signup input:not(:focus):valid~.label {
+    top: -17px;
+    font-size: .8rem;
+    opacity: 1;
+}
