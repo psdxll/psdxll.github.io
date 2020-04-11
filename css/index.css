@@ -86,7 +86,7 @@ header ul li a {
   font-weight: 700;
   text-shadow: 2px 2px 2px #4d4e4f;
   letter-spacing: 2px;
-  transition: 0.6s;
+  transition: 0.3s;
   margin: 0 20px;
 }
 
@@ -98,7 +98,7 @@ header ul li a:before {
   border-bottom: 3px solid #5c302d;
   bottom: -4px;
   left: 50%;
-  transition: 0.6s;
+  transition: 0.7s;
 }
 
 header ul li a:hover:before {
@@ -208,17 +208,9 @@ header ul li a:hover {
   width: 100%;
 }
 
-.vidtop {
+#tojhsp {
   font-size: 40px;
   font-weight: 500;
-}
-
-.video_info > h3 > a {
-  text-decoration: none;
-  color: #27583b;
-}
-
-#tojhsp {
   padding-top: 80px;
 }
 
@@ -234,18 +226,18 @@ header ul li a:hover {
 
 .row {
   position: relative;
-  width: 1100px;
+  width: 1200px;
   display: flex;
-  margin-left: 30px;
+
   flex-wrap: wrap;
-  margin-top: 50px;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  padding-bottom: 100px;
 }
 .row .box {
   position: relative;
-  width: 500px;
-  height: 333px;
-  margin: 20px;
+  width: 550px;
+  height: 400px;
+  margin: 10px;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -253,6 +245,7 @@ header ul li a:hover {
   z-index: 1;
   transform: scale(1.1);
   box-shadow: 0 25px 40px rgb(180, 180, 180);
+  border-radius: 50px;
 }
 .row .box .imgbox {
   position: absolute;
@@ -269,7 +262,7 @@ header ul li a:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgb(228, 228, 228);
+  background: rgb(131, 129, 129);
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
@@ -285,7 +278,7 @@ header ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 50px;
 }
 .row .box .detail {
   position: relative;
@@ -295,43 +288,31 @@ header ul li a:hover {
   height: 100%;
   z-index: 1;
   display: flex;
-
+  cursor: pointer;
   align-items: flex-end;
 }
 .row .box .detail a {
   text-decoration: none;
 }
-.row .box .detail h2 {
-  color: #fff;
+.row .box .detail h1 {
+  color: rgb(252, 252, 252);
   transition: 0.5s;
   margin-bottom: 150px;
-  margin-left: 150px;
-  font-size: 50px;
+  margin-left: 200px;
+  font-size: 70px;
   transform: translateY(500px);
 }
-.row .box:hover .detail h2 {
+.row .box:hover .detail h1 {
   transform: translateY(0);
-  transition-delay: 0.4s;
 }
 
-.row .box .detail p {
-  margin-top: 10px;
-  color: #fff;
-  transform: translateY(200px);
-  transition: 0.5s;
-}
-.row .box:hover .detail p {
-  transform: translateY(0);
-  transition-delay: 0.5s;
-}
-
-/*鼓岭图库*/
+/*鼓岭历史*/
 
 .container3 {
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   width: 100%;
 }
 
@@ -357,121 +338,54 @@ header ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 60px;
 }
-.container2 .card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 100px 0;
-}
-.container2 .card:nth-child(odd) {
-  flex-direction: row;
-}
-.container2 .card:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.container2 .card .imgBx {
-  position: relative;
-  left: 25px;
-  width: 500px;
-  height: 400px;
 
-  z-index: 5;
+.culture {
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+
+  cursor: pointer;
 }
-.container2 .card:nth-child(even) .imgBx {
-  left: -25px;
-}
-.container2 .card .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.culture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
-.container2 .card .contentBx {
-  position: relative;
-  right: 25px;
-  width: 500px;
-  height: 400px;
-  background: rgb(157, 214, 252);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 60px 20px 100px;
-}
-.container2 .card:nth-child(even) .contentBx {
-  right: -25px;
-  padding: 20px 100px 20px 60px;
-}
-.container2 .card .contentBx:before {
-  content: "";
+.culture-detail {
   position: absolute;
-  top: -50px;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  background: rgb(157, 214, 252);
-  box-shadow: 0px 0px 5px 2px rgb(46, 156, 230);
-  z-index: -1;
+  bottom: -500px;
+  background: #ebebebca;
+
+  width: 100%;
+  padding: 40px;
+  transition: 0.3s linear;
 }
-.container2 .card .contentBx h2 {
-  font-size: 30px;
-  color: #fff;
+.culture:hover .culture-detail {
+  bottom: 0;
+}
+.cate {
+  display: inline-block;
+  color: #27583b;
+  font-size: 18px;
+  position: relative;
 }
 
-.container2 .card .contentBx p {
-  margin-top: 10px;
-  color: #fff;
+.tittle2 {
+  color: #5c302d;
+  font-weight: 500;
+  margin: 5px 0;
 }
-.container2 .card .contentBx a {
-  display: inline-block;
-  margin-top: 15px;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid #fff;
-}
-@media (max-width: 1170px) {
-  .container2 .card {
-    flex-direction: column;
-    max-width: 350px;
-    margin: 25px 25px;
-  }
-  .container2 .card .imgBx {
-    width: 100%;
-    height: 250px;
-    left: 0;
-  }
-  .container2 .card .contentBx {
-    width: 100%;
-    height: auto;
-    right: 0;
-    padding: 30px;
-    text-align: center;
-  }
-  .container2 .card .contentBx:before {
-    top: 0;
-    bottom: 0;
-  }
-  .container2 .card:nth-child(even) .imgBx {
-    left: 0px;
-  }
-  .container2 .card:nth-child(even) .contentBx {
-    right: 0;
-    padding: 30px;
-  }
+.owl-stage {
+  display: flex !important;
 }
 
 /*底部信息*/
 
 footer {
   background: #f7f7f7;
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .footer-container {
