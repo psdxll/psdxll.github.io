@@ -6,7 +6,7 @@ var line = document.querySelector('#line');
 var lineBar = document.getElementById('lineBar');
 var currPlayTime = document.querySelector('#current');
 var totalTime = document.querySelector(' #duration');
-var volume =document.querySelector(".volume");
+ 
 
 myVideo.oncanplay = function () {
 	//获取视频总时间
@@ -59,4 +59,6 @@ line.onclick=function(e){
 	myVideo.currentTime=(event.offsetX/this.offsetWidth)*myVideo.duration;
 }
 
- 
+myVideo.addEventListener("ended",function(){
+	myVideo_Status.src="images/bg2.jpg"; 
+})
