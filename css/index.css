@@ -9,7 +9,6 @@
 
 body {
   font-family: "微软雅黑";
-
   overflow-x: hidden;
 }
 
@@ -188,7 +187,7 @@ header ul li a:hover {
   color: #fff;
   transition: 0.8s ease-in-out;
 }
-@media (max-width: 550px) {
+@media  screen and (max-width: 550px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -305,6 +304,74 @@ header ul li a:hover {
 .row .box:hover .detail h1 {
   transform: translateY(0);
 }
+@media screen and (max-width: 1175px) {
+  .row {
+    max-width: 600px;
+    position: relative;
+    margin: 80px auto;
+  }
+  .row .box {
+    width: 480px;
+    height: 300px;
+    position: relative;
+  }
+
+  .row .box .imgbox {
+    width: 480px;
+    height: 300px;
+  }
+  .row .box .detail h1 {
+    color: rgb(252, 252, 252);
+    transition: 0.5s;
+    margin-bottom: 120px;
+    margin-left: 190px;
+    font-size: 45px;
+    transform: translateY(500px);
+  }
+}
+@media screen and (max-width: 557px) {
+  .row .box {
+    width: 350px;
+    height: 210px;
+    position: relative;
+  }
+
+  .row .box .imgbox {
+    width: 350px;
+    height: 210px;
+    position: relative;
+  }
+  .row .box .detail h1 {
+    color: rgb(252, 252, 252);
+    transition: 0.5s;
+    margin-bottom: 300px;
+    margin-left: 140px;
+    font-size: 30px;
+    transform: translateY(500px);
+  }
+}
+@media screen and (max-width: 300px) {
+  .row .box {
+    max-width: 300px;
+    width: 200px;
+    height: 110px;
+    position: relative;
+  }
+
+  .row .box .imgbox {
+    width: 200px;
+    height: 110px;
+    position: relative;
+  }
+  .row .box .detail h1 {
+    color: rgb(252, 252, 252);
+    transition: 0.5s;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    font-size: 20px;
+    transform: translateY(500px);
+  }
+}
 
 /*鼓岭历史*/
 
@@ -356,7 +423,7 @@ header ul li a:hover {
 .culture-detail {
   position: absolute;
   bottom: -500px;
-  background: #ebebebca;
+  background: #ebebebe5;
 
   width: 100%;
   padding: 40px;
@@ -369,16 +436,25 @@ header ul li a:hover {
   display: inline-block;
   color: #27583b;
   font-size: 18px;
+  font-weight: 600;
   position: relative;
 }
 
 .tittle2 {
-  color: #5c302d;
+  color: #350906;
   font-weight: 500;
   margin: 5px 0;
 }
 .owl-stage {
   display: flex !important;
+}
+.owl-prev {
+  width: 40px;
+  margin-left: 550px;
+  margin-top: 10px;
+}
+.owl-next {
+  width: 40px;
 }
 
 /*底部信息*/
