@@ -3,9 +3,12 @@
 /* CSS Document */
 body {
   margin: 0;
-  background-color: rgb(157, 214, 252);
+  background-color: rgb(156, 195, 206);
 }
-
+.logo {
+  position: absolute;
+ 
+}
 .player {
   width: 1280px;
   height: 828px;
@@ -23,32 +26,24 @@ body {
   text-align: center;
   line-height: 48px;
   border-radius: 24px 24px 0 0;
+  color: #3c4980;
 }
 .choose {
   float: left;
   text-align: center;
   z-index: 20;
-  position: fixed;
+  position: absolute;
   opacity: 0;
-  margin-left: 220px;
-
-  top: 70%;
+  margin-top: 275px;
+  margin-left: 375px;
+  
 }
 
-.choose a .c-left {
+.choose a .cleft {
   float: left;
-  width: 400px;
-  height: 60px;
-  margin-right: 20px;
+  width: 540px;
 }
 
-.choose a .c-right {
-  position: fixed;
-  float: left;
-  width: 400px;
-  height: 60px;
-  margin-left: 20px;
-}
 .video {
   width: 1280px;
   height: 720px;
